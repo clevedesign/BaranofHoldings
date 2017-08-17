@@ -1,0 +1,493 @@
+﻿@model BaranofHoldings.Models.HomeModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.HomeHeader = Model.home.Header;
+}
+
+<section id="heading" class="heading-section">
+    <div class="container">
+        <p>@Html.Raw(@Model.overview.Content)</p>
+    </div>
+</section>
+
+<span id="approach" class="anchor"></span>
+<section class="approach-section grey-section">
+    <div class="container">
+        <div class="section-title">
+            Investment Approach
+        </div>
+        <div class="section-content">
+            <div class="left-part col-sm-2 desktop">
+                
+                @foreach (var approach in @Model.approach)
+                {
+                    <div class="approach-left">
+                        <img src="~/images/@approach.Image" />
+                    </div>
+                }
+
+            </div>
+            <div class="right-part col-sm-10">
+
+                @foreach (var approach in @Model.approach)
+                {
+                    <img class="mobile" src="~/Images/@approach.Image" />
+                    <div class="approach-content">
+                        <div class="approach-content-title">
+                            @Html.Raw(@approach.Title)
+                        </div>
+                        <div class="approach_list_content">
+                            @Html.Raw(@approach.Content)
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<span id="criteria" class="anchor"></span>
+<section class="invest-section">
+    <div class="container">
+        <div class="section-title">
+            Strategy
+        </div>
+
+        @foreach (var strategy in @Model.strategy)
+        {
+            <div class="col-sm-12 stratedy_block">
+                @*<div>Title</div>*@
+                <span>@strategy.Content</span>
+            </div>
+        }
+
+    </div>
+</section>
+
+<span id="portfolio" class="anchor"></span>
+<section class="portfolio-section grey-section">
+    <div class="container">
+        <div class="section-title">
+            Portfolio
+        </div>
+        <div class="section-content">
+            <div class="portfolio-content">
+               
+                <ul class="filters row nav nav-tabs" id="myTab">
+                   
+                    <li><a class="Active" data-target="#profile" data-toggle="tab">All</a></li>
+                    <li><a data-target="#messages" data-toggle="tab">Under Construction</a></li>
+                    <li><a data-target="#settings" data-toggle="tab">Pre-Development</a></li>
+                    @*<li><a data-target="#diligence" data-toggle="tab">Preliminary Diligence</a></li>*@
+                </ul>
+                            
+
+                <div class="tab-content">
+                  
+                    <div class="tab-pane" id="profile">
+                       
+                        <div class="portfolio-list row">
+                            @foreach (var item in Model.PortfoliosAll)
+                            {
+                                <figure class="col-md-3 col-sm-6 col-xs-6 passedid" id="@item.PortfolioId" data-toggle="modal" data-target=".openmodal">
+                                    <a href="" class="portfolio-link">
+                                        <div class="port-hover">
+                                            <div class="port-name">
+                                                @item.PortfolioName
+                                            </div>
+                                        </div>
+                                        <div class="port-list-content">
+                                            <div class="">
+                                                <div class="hover_portfolio">
+                                                    @item.PortfolioName
+                                                    <br />
+                                                    @item.PortfolioFrontLocation
+                                                </div>
+                                                <div class="port-logo">
+                                                    <img src="~/Images/@item.PortfolioLogo" alt="@item.PortfolioName" title="@item.PortfolioName">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </figure>   
+
+                            }
+
+                        </div>
+
+                    </div>
+                    <div class="tab-pane" id="messages">
+                        <div class="portfolio-list row">
+                            @foreach (var item in Model.PortfoliosCurrent)
+                            {
+                                <figure class="col-md-3 col-sm-6 col-xs-6 passedid" id="@item.PortfolioId" data-toggle="modal" data-target=".openmodal">
+                                    <a href="" class="portfolio-link">
+                                        <div class="port-hover">
+                                            <div class="port-name">
+                                                @item.PortfolioName
+                                            </div>
+                                        </div>
+                                        <div class="port-list-content">
+                                            <div class="">
+                                                <div class="hover_portfolio">
+                                                    @item.PortfolioName
+                                                    <br />
+                                                    @item.PortfolioFrontLocation
+                                                </div>
+                                                <div class="port-logo">
+                                                    <img src="~/Images/@item.PortfolioLogo" alt="@item.PortfolioName" title="@item.PortfolioName">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </figure>                              
+
+
+                            }
+                            
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="settings">
+
+                        @foreach (var item in Model.PortfoliosExited)
+                        { 
+                         
+                            <figure class="col-md-3 col-sm-6 col-xs-6 passedid"  id="@item.PortfolioId" data-toggle="modal" data-target=".openmodal">
+                                <a href="" class="portfolio-link">
+                                    <div class="port-hover">
+                                        <div class="port-name">
+                                            @item.PortfolioName
+                                        </div>
+                                    </div>
+                                    <div class="port-list-content">
+                                        <div class="">
+                                            <div class="hover_portfolio">
+                                                @item.PortfolioName
+                                                <br />
+                                                @item.PortfolioFrontLocation
+                                            </div>
+                                            <div class="port-logo">
+                                                <img src="~/Images/@item.PortfolioLogo" alt="@item.PortfolioName" title="@item.PortfolioName">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </figure>                              
+
+
+                        }
+
+                    </div>
+                    @*<div class="tab-pane" id="diligence">
+
+                        @foreach (var item in Model.PortfoliosDiligence)
+                        {
+
+                            <figure class="col-md-3 col-sm-6 col-xs-6 passedid" id="@item.PortfolioId" data-toggle="modal" data-target=".openmodal">
+                                <a href="" class="portfolio-link">
+                                    <div class="port-hover"></div>
+                                    <div class="port-list-content">
+                                        <div>
+                                            <div class="port-logo">
+                                                <img src="~/upload/portfolios/@item.PortfolioLogo" alt="@item.PortfolioName" title="@item.PortfolioName">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </figure>
+
+
+                        }
+
+                    </div>*@
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<span id="team" class="anchor"></span>
+<section class="team-section">
+    <div class="container">
+        <div class="section-title">
+            Team
+        </div>
+        <div class="section-content">
+            <div class="team-content">
+                <div class="members">
+                    
+                    @foreach (var itemTeam in Model.TeamList)
+                    {
+                        <figure class="col-md-3 col-sm-6 col-xs-6 passedidTean" id="@itemTeam.TeamMemberId" data-toggle="modal" data-target=".openmodalTeam">
+                            <a href="" class="member-link">
+                                <div class="member-hover">
+                                    <div class="member-name">
+                                        @itemTeam.FirstName
+                                        @itemTeam.LastName
+                                    </div>
+                                    <div class="member-title">
+                                        @itemTeam.MemberTitle
+                                    </div>
+                                </div>
+                                <img src="~/Images/@itemTeam.MemberPicture" alt="@itemTeam.FirstName" title="@itemTeam.FirstName">
+                            </a>
+                        </figure>
+
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section grey-section">
+    <div class="container">
+        <div class="section-title">
+            Contact
+        </div>
+        <div class="section-content">
+            <div class="contact-content">
+                <div class="left-part col-sm-3">
+                    <div class="contact-title">@Html.Raw(@Model.contact.FirmName)</div>
+                    <div class="contact-address">
+                        <span>@Html.Raw(@Model.contact.Address)</span><br />
+                        <span>@Html.Raw(@Model.contact.City), @Html.Raw(@Model.contact.State) @Html.Raw(@Model.contact.Zip)</span><br />
+                        <span>@Html.Raw(@Model.contact.PNumber)</span><br />
+                        @*<span><a href="mailto:@Html.Raw(@Model.contact.Mail)">@Html.Raw(@Model.contact.Mail)</a></span>*@
+                    </div>
+                    <br />
+                    @*<div class="contact-Home">
+                        <div class="contact-title">Firm Home</div>
+                        <a href="~/upload/pdfs/@Html.Raw(@Model.contact.FirmName)" download>Download Brochure</a>
+                    </div>*@
+                </div>
+                <div class="right-part col-sm-9 map">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.143645286981!2d-96.80663858440204!3d32.788450290708674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e993b6a4c4e4d%3A0x9fa1471623b719b4!2s1717+McKinney+Ave+%23700%2C+Dallas%2C+TX+75202!5e0!3m2!1sen!2sus!4v1455293311232" width="825" height="265" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Modals -->
+<div class="modal fade openmodal" id="myPortModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog">
+        <div>
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="~/images/close.png" /></button>
+            </div>
+            <div id="port-details" class="modal-body">
+                 @*<div class="modal-control row">
+                        <a class="modal-left-control" href="" data-bind="click:prevport, attr:{id:PortfolioId}" ><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                        <a class="modal-right-control" href="" data-bind="attr:{id:PortfolioId}" ><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                    </div>*@
+                <div class="modal-content row">
+                    <div class="port-details-left-part col-sm-4">
+                        <div class="port-list-content">
+                            <div>
+                                <div class="port-logo">
+                                    <img alt="" data-bind="attr:{src: PortfolioLogo, alt:PortfolioName}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="port-details-right-part col-sm-8">
+                        <div class="port-details-name" data-bind="html:PortfolioName"></div>
+                        <span class="port-details-location" data-bind="html:PortfolioLocation"></span><br />
+                        <!--
+                        <span class="port-details-type">{{portDetails.portfolioServices}}</span><br />-->
+                        @*<span class="port-details-date">{{isCurrent}}{{portDetails.portfolioDate | date:'MMMM yyyy'}}</span><br />*@
+                        <!--<a class="port-details-web" href="{{portDetails.portfolioSite}}" target="_blank">{{portAddr}}</a>-->
+                    </div>
+                    <div class="port-details-content col-sm-12" data-bind="html:PortfolioDetails"></div>
+                    <!--<div class="port-footnote">{{portFootnote}}</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modals -->
+<div class="modal fade openmodalTeam" id="" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog">
+        <div>
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="~/images/close.png" /></button>
+            </div>
+            <div id="team-details" class="modal-body">
+                 @*<div class="modal-control row">
+                    <a class="modal-left-control" href="" ng-click="getMemberList(memberDetails.teamMemberId, memberDetails.memberType, false)"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+                    <a class="modal-right-control" href="" ng-click="getMemberList(memberDetails.teamMemberId, memberDetails.memberType, true)"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                </div>*@ 
+                <div class="modal-content row">
+                    <div class="member-details-left-part col-sm-4">
+                        <div class="member-picture">
+                            <img alt="" data-bind="attr:{src: MemberPicture, alt:LastName}"/>
+                            <div class="member-mobile-name mobile">
+                                <span class="member-details-name" data-bind="text:FirstName"></span><br />
+                                <span class="member-details-name" data-bind="text:LastName"></span><br />
+                                <span class="member-details-title" data-bind="text:MemberTitle"></span><br />
+                            </div>
+                            <div class="member-details-contact">
+                                <span class="member-contact-title">Contact</span><br />
+                                <span data-bind="text:MemberPhone"></span><br />
+                                <a data-bind="text:MemberEmail, attr: {href: 'mailto:'+MemberEmail()}"></a><br />
+                                @*<a target=”_blank” data-bind="attr:{href: MemberLinkedIn}">LinkedIn</a><br />
+                                <a data-bind="attr:{href: MembervCard}" alt="">vCard</a>*@
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-details-right-part col-sm-8">
+                        <span class="member-details-name desktop" data-bind="text:FirstName"></span>
+                        <span class="member-details-name desktop" data-bind="text:LastName"></span><br />
+                        <span data-bind="text:MemberTitle" class="member-details-title desktop"></span><br />
+                        <div  data-bind="html:MemberBriefIntro" class="member-brief-desc"></div>
+
+                        <div class="member-bio" data-bind="html:MemberBio"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+<script src="~/Scripts/knockout-3.4.0.js"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+
+            var viewModel = function () {
+                //ko
+                //port observables
+                var self = this;
+                self.PortfolioId = ko.observable();
+                self.PortfolioType = ko.observable();
+                self.PortfolioName = ko.observable();
+                self.PortfolioLogo = ko.observable();
+                self.PortfolioLocation = ko.observable();
+                self.PortfolioServices = ko.observable();
+                self.PortfolioDate = ko.observable();
+                self.PortfolioSite = ko.observable();
+                self.PortfolioDetails = ko.observable();
+
+                //team observables
+
+                self.TeamMemberId = ko.observable();
+                self.MemberType = ko.observable();
+                self.Prefix = ko.observable();
+                self.FirstName = ko.observable();
+                self.MiddleName = ko.observable();
+                self.LastName = ko.observable();
+                self.MemberTitle = ko.observable();
+                self.MemberEmail = ko.observable();
+                self.MemberPhone = ko.observable();
+                self.MemberLinkedIn = ko.observable();
+                self.MembervCard = ko.observable();
+                self.MemberPicture = ko.observable();
+                self.MemberBriefIntro = ko.observable();
+                self.MemberBio = ko.observable();
+
+                // port prev click
+                //self.prevport = function (data, event) {
+                //    var elementkey = event.currentTarget.id;
+                //    //var prevelement = $(elementkey).prev().attr("id");
+                //    var prevelement = $(elementkey).prev().id;
+                //    alert(prevelement);
+                //    //getport(prevelement);
+                //}
+
+                //function getport(id){
+                //    var newID = $(this).attr("id");
+                //    $.ajax({
+                        
+                //    });
+
+                //}
+
+                //porfolio
+                $('.passedid').click(function () {
+                    var newID = $(this).attr("id");
+                    var URL = '@Url.Action("getPortfolio", "Home")/' + newID;
+                    $.ajax({
+                        type: "GET",
+                        url: URL,
+                        datatype: "json",
+                        success: function (returnData) {
+                            var mydata = returnData.Data;
+
+                            self.PortfolioId(mydata.PortfolioId)
+                            self.PortfolioType(mydata.PortfolioType)
+                            self.PortfolioName(mydata.PortfolioName)
+                            self.PortfolioLogo("/Images/" + mydata.PortfolioLogo)
+                            self.PortfolioLocation(mydata.PortfolioLocation)
+                            self.PortfolioServices(mydata.PortfolioServices)
+                            self.PortfolioDate(mydata.PortfolioDate)
+                            self.PortfolioSite(mydata.PortfolioSite)
+                            self.PortfolioDetails(mydata.PortfolioDetails)
+
+                        }
+
+                    });
+                });
+
+
+                //team
+                $('.passedidTean').click(function () {
+                    var newID = $(this).attr("id");
+                    var URL = '@Url.Action("getTeam", "Home")/' + newID;
+                    $.ajax({
+                        type: "GET",
+                        url: URL,
+                        datatype: "json",
+                        success: function (returnData) {
+                            var mydata = returnData.Data;
+
+                            self.TeamMemberId(mydata.TeamMemberId)
+                            self.MemberType(mydata.MemberType)
+                            self.Prefix(mydata.Prefix)
+                            self.FirstName(mydata.FirstName)
+                            self.MiddleName(mydata.MiddleName)
+                            self.LastName(mydata.LastName)
+                            self.MemberTitle(mydata.MemberTitle)
+                            self.MemberEmail(mydata.MemberEmail)
+                            self.MemberPhone(mydata.MemberPhone)
+                            self.MemberLinkedIn(mydata.MemberLinkedIn)
+                            self.MembervCard("/Imeages/" + mydata.MembervCard)
+                            self.MemberPicture("/Images/" + mydata.MemberPicture)
+                            self.MemberBriefIntro(mydata.MemberBriefIntro)
+                            self.MemberBio(mydata.MemberBio)
+
+                        }
+
+                    });
+                });
+
+
+
+
+
+
+
+            }
+
+            ko.applyBindings(viewModel);
+
+        });
+    </script>
+    
+    }

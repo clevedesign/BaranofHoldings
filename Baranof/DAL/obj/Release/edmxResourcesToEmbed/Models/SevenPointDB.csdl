@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SevenPointDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="ContactId" />
+    </Key>
+    <Property Name="ContactId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AddressLine1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AddressLine2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="State" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Zip" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Map" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="LogId" />
+    </Key>
+    <Property Name="LogId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LogType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContentName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OldValues" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NewValues" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PageContent">
+    <Key>
+      <PropertyRef Name="ContentId" />
+    </Key>
+    <Property Name="ContentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ParentPage" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContentName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContentDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ContentOrder" Type="Int32" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PortfolioContent">
+    <Key>
+      <PropertyRef Name="PortfolioId" />
+    </Key>
+    <Property Name="PortfolioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PortfolioType" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PortfolioName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PortfolioLogo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PortfolioLocation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PortfolioServices" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PortfolioDate" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="PortfolioSite" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PortfolioDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PortfolioOrder" Type="Int32" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TeamMember">
+    <Key>
+      <PropertyRef Name="TeamMemberId" />
+    </Key>
+    <Property Name="TeamMemberId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MemberType" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Prefix" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="FirstName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Suffix" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MemberTitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberEmail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberPhone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberLinkedIn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MembervCard" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberPicture" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberBriefIntro" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberBio" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberOrder" Type="Int32" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="SevenPointDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Contacts" EntityType="Self.Contact" />
+    <EntitySet Name="Logs" EntityType="Self.Log" />
+    <EntitySet Name="PageContents" EntityType="Self.PageContent" />
+    <EntitySet Name="PortfolioContents" EntityType="Self.PortfolioContent" />
+    <EntitySet Name="TeamMembers" EntityType="Self.TeamMember" />
+  </EntityContainer>
+</Schema>

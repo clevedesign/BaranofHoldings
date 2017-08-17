@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="barano5_Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Approach">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar(max)" />
+          <Property Name="Content" Type="nvarchar(max)" />
+          <Property Name="Order" Type="int" />
+          <Property Name="Image" Type="nvarchar(max)" />
+          <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="isDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Contact">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirmName" Type="nvarchar(max)" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="Title" Type="nvarchar(max)" />
+          <Property Name="Address" Type="nvarchar(max)" />
+          <Property Name="City" Type="nvarchar(max)" />
+          <Property Name="State" Type="nvarchar(max)" />
+          <Property Name="Zip" Type="nvarchar(max)" />
+          <Property Name="PNumber" Type="nvarchar(max)" />
+          <Property Name="Mail" Type="nvarchar(max)" />
+          <Property Name="Pdf" Type="nvarchar(max)" />
+          <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="isDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Home">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Header" Type="nvarchar(max)" />
+          <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="isDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Overview">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Content" Type="nvarchar(max)" />
+          <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="isDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PortfolioContent">
+          <Key>
+            <PropertyRef Name="PortfolioId" />
+          </Key>
+          <Property Name="PortfolioId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PortfolioType" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="PortfolioName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="PortfolioLogo" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="PortfolioFrontLocation" Type="nvarchar(max)" />
+          <Property Name="PortfolioLocation" Type="nvarchar(max)" />
+          <Property Name="PortfolioServices" Type="nvarchar(max)" />
+          <Property Name="PortfolioDate" Type="datetime2" Precision="7" />
+          <Property Name="PortfolioSite" Type="nvarchar(max)" />
+          <Property Name="PortfolioDetails" Type="nvarchar(max)" />
+          <Property Name="PortfolioOrder" Type="int" Nullable="false" />
+          <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="isDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Strategy">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar(max)" />
+          <Property Name="Content" Type="nvarchar(max)" />
+          <Property Name="Order" Type="int" />
+          <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="isDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TeamMember">
+          <Key>
+            <PropertyRef Name="TeamMemberId" />
+          </Key>
+          <Property Name="TeamMemberId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MemberType" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Prefix" Type="nvarchar" MaxLength="100" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="MiddleName" Type="nvarchar" MaxLength="200" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Suffix" Type="nvarchar" MaxLength="100" />
+          <Property Name="MemberTitle" Type="nvarchar(max)" />
+          <Property Name="MemberEmail" Type="nvarchar(max)" />
+          <Property Name="MemberPhone" Type="nvarchar(max)" />
+          <Property Name="MemberLinkedIn" Type="nvarchar(max)" />
+          <Property Name="MembervCard" Type="nvarchar(max)" />
+          <Property Name="MemberPicture" Type="nvarchar(max)" />
+          <Property Name="MemberBriefIntro" Type="nvarchar(max)" />
+          <Property Name="MemberBio" Type="nvarchar(max)" />
+          <Property Name="MemberOrder" Type="int" Nullable="false" />
+          <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="isDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="barano5_ModelStoreContainer">
+          <EntitySet Name="Approach" EntityType="Self.Approach" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Contact" EntityType="Self.Contact" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Home" EntityType="Self.Home" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Overview" EntityType="Self.Overview" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PortfolioContent" EntityType="Self.PortfolioContent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Strategy" EntityType="Self.Strategy" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TeamMember" EntityType="Self.TeamMember" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="barano5_Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Approach">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Order" Type="Int32" />
+          <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Contact">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirmName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="State" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Zip" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Pdf" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Home">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Header" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Overview">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PortfolioContent">
+          <Key>
+            <PropertyRef Name="PortfolioId" />
+          </Key>
+          <Property Name="PortfolioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PortfolioType" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PortfolioName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PortfolioLogo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PortfolioFrontLocation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PortfolioLocation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PortfolioServices" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PortfolioDate" Type="DateTime" Precision="7" />
+          <Property Name="PortfolioSite" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PortfolioDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PortfolioOrder" Type="Int32" Nullable="false" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Strategy">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Order" Type="Int32" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TeamMember">
+          <Key>
+            <PropertyRef Name="TeamMemberId" />
+          </Key>
+          <Property Name="TeamMemberId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MemberType" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Prefix" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MiddleName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Suffix" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MemberTitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MemberEmail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MemberPhone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MemberLinkedIn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MembervCard" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MemberPicture" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MemberBriefIntro" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MemberBio" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MemberOrder" Type="Int32" Nullable="false" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="barano5_Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Approaches" EntityType="Self.Approach" />
+          <EntitySet Name="Contacts" EntityType="Self.Contact" />
+          <EntitySet Name="Homes" EntityType="Self.Home" />
+          <EntitySet Name="Overviews" EntityType="Self.Overview" />
+          <EntitySet Name="PortfolioContents" EntityType="Self.PortfolioContent" />
+          <EntitySet Name="Strategies" EntityType="Self.Strategy" />
+          <EntitySet Name="TeamMembers" EntityType="Self.TeamMember" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="barano5_ModelStoreContainer" CdmEntityContainer="barano5_Entities">
+          <EntitySetMapping Name="Approaches">
+            <EntityTypeMapping TypeName="barano5_Model.Approach">
+              <MappingFragment StoreEntitySet="Approach">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="Order" ColumnName="Order" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Contacts">
+            <EntityTypeMapping TypeName="barano5_Model.Contact">
+              <MappingFragment StoreEntitySet="Contact">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="FirmName" ColumnName="FirmName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Zip" ColumnName="Zip" />
+                <ScalarProperty Name="PNumber" ColumnName="PNumber" />
+                <ScalarProperty Name="Mail" ColumnName="Mail" />
+                <ScalarProperty Name="Pdf" ColumnName="Pdf" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Homes">
+            <EntityTypeMapping TypeName="barano5_Model.Home">
+              <MappingFragment StoreEntitySet="Home">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Header" ColumnName="Header" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Overviews">
+            <EntityTypeMapping TypeName="barano5_Model.Overview">
+              <MappingFragment StoreEntitySet="Overview">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PortfolioContents">
+            <EntityTypeMapping TypeName="barano5_Model.PortfolioContent">
+              <MappingFragment StoreEntitySet="PortfolioContent">
+                <ScalarProperty Name="PortfolioId" ColumnName="PortfolioId" />
+                <ScalarProperty Name="PortfolioType" ColumnName="PortfolioType" />
+                <ScalarProperty Name="PortfolioName" ColumnName="PortfolioName" />
+                <ScalarProperty Name="PortfolioLogo" ColumnName="PortfolioLogo" />
+                <ScalarProperty Name="PortfolioFrontLocation" ColumnName="PortfolioFrontLocation" />
+                <ScalarProperty Name="PortfolioLocation" ColumnName="PortfolioLocation" />
+                <ScalarProperty Name="PortfolioServices" ColumnName="PortfolioServices" />
+                <ScalarProperty Name="PortfolioDate" ColumnName="PortfolioDate" />
+                <ScalarProperty Name="PortfolioSite" ColumnName="PortfolioSite" />
+                <ScalarProperty Name="PortfolioDetails" ColumnName="PortfolioDetails" />
+                <ScalarProperty Name="PortfolioOrder" ColumnName="PortfolioOrder" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Strategies">
+            <EntityTypeMapping TypeName="barano5_Model.Strategy">
+              <MappingFragment StoreEntitySet="Strategy">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="Order" ColumnName="Order" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TeamMembers">
+            <EntityTypeMapping TypeName="barano5_Model.TeamMember">
+              <MappingFragment StoreEntitySet="TeamMember">
+                <ScalarProperty Name="TeamMemberId" ColumnName="TeamMemberId" />
+                <ScalarProperty Name="MemberType" ColumnName="MemberType" />
+                <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Suffix" ColumnName="Suffix" />
+                <ScalarProperty Name="MemberTitle" ColumnName="MemberTitle" />
+                <ScalarProperty Name="MemberEmail" ColumnName="MemberEmail" />
+                <ScalarProperty Name="MemberPhone" ColumnName="MemberPhone" />
+                <ScalarProperty Name="MemberLinkedIn" ColumnName="MemberLinkedIn" />
+                <ScalarProperty Name="MembervCard" ColumnName="MembervCard" />
+                <ScalarProperty Name="MemberPicture" ColumnName="MemberPicture" />
+                <ScalarProperty Name="MemberBriefIntro" ColumnName="MemberBriefIntro" />
+                <ScalarProperty Name="MemberBio" ColumnName="MemberBio" />
+                <ScalarProperty Name="MemberOrder" ColumnName="MemberOrder" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="Modified" ColumnName="Modified" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

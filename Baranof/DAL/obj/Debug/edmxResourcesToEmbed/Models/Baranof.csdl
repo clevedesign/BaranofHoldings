@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_97691_baranofModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Home">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Header" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Overview">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DB_97691_baranofEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Homes" EntityType="Self.Home" />
+    <EntitySet Name="Overviews" EntityType="Self.Overview" />
+    <EntitySet Name="Approaches" EntityType="DB_97691_baranofModel.Approach" />
+    <EntitySet Name="Strategies" EntityType="DB_97691_baranofModel.Strategy" />
+    <EntitySet Name="TeamMembers" EntityType="DB_97691_baranofModel.TeamMember" />
+    <EntitySet Name="Contacts" EntityType="DB_97691_baranofModel.Contact" />
+    <EntitySet Name="PortfolioContents" EntityType="DB_97691_baranofModel.PortfolioContent" />
+  </EntityContainer>
+  <EntityType Name="Approach">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Order" Type="Int32" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Strategy">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Order" Type="Int32" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TeamMember">
+    <Key>
+      <PropertyRef Name="TeamMemberId" />
+    </Key>
+    <Property Name="TeamMemberId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MemberType" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Prefix" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MiddleName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Suffix" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MemberTitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberEmail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberPhone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberLinkedIn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MembervCard" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberPicture" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberBriefIntro" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberBio" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MemberOrder" Type="Int32" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirmName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="State" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Zip" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Pdf" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PortfolioContent">
+    <Key>
+      <PropertyRef Name="PortfolioId" />
+    </Key>
+    <Property Name="PortfolioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PortfolioType" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="PortfolioName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PortfolioLogo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PortfolioFrontLocation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PortfolioLocation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PortfolioServices" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PortfolioDate" Type="DateTime" Precision="7" />
+    <Property Name="PortfolioSite" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PortfolioDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PortfolioOrder" Type="Int32" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Modified" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="isDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+</Schema>

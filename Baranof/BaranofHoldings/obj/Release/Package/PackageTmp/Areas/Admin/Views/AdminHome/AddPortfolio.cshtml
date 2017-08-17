@@ -1,0 +1,149 @@
+﻿@model BaranofHoldings.Areas.Admin.Models.HomeModelAdmin
+
+@{
+    ViewBag.Title = "UpdatePortfolio";
+
+}
+
+<div class="container">
+    <div class="row">
+
+
+
+
+
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">Add new Portfolio</div>
+            <div class="panel-body" style="background-color: white;">
+                <div class="form-group">
+
+
+                    @using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-horizontal">
+                            <h4>PortfolioContent</h4>
+                            <hr />
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        
+
+
+
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.onePortfolio.PortfolioType, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.DropDownListFor(model => model.onePortfolio.PortfolioType, (IEnumerable<SelectListItem>)ViewBag.Type, new { @class = "form-control" })
+
+                                    @Html.ValidationMessageFor(model => model.onePortfolio.PortfolioType, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+
+                                @Html.LabelFor(model => model.onePortfolio.PortfolioName, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.onePortfolio.PortfolioName, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.onePortfolio.PortfolioName, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10  ">
+                                    @if (Model.onePortfolio != null)
+                                    {
+                                        <img src="~/Images/@Model.onePortfolio.PortfolioLogo" />
+                                    }
+                                    else
+                                    {
+                                        <img src="~/Images/noimg.jpg" />
+                                    }
+
+                                    <div>
+                                        <br />
+                                        @Html.LabelFor(m => m.onePortfolio.PortfolioLogo)
+                                        @Html.TextBoxFor(m => Model.ImageUpload, new { @type = "file" })
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.onePortfolio.PortfolioFrontLocation, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.onePortfolio.PortfolioFrontLocation, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.onePortfolio.PortfolioFrontLocation, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.onePortfolio.PortfolioLocation, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.onePortfolio.PortfolioLocation, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.onePortfolio.PortfolioLocation, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.onePortfolio.PortfolioServices, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.onePortfolio.PortfolioServices, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.onePortfolio.PortfolioServices, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.onePortfolio.PortfolioDate, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.onePortfolio.PortfolioDate, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.onePortfolio.PortfolioDate, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.onePortfolio.PortfolioSite, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.onePortfolio.PortfolioSite, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.onePortfolio.PortfolioSite, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.onePortfolio.PortfolioDetails, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.TextAreaFor(model => model.onePortfolio.PortfolioDetails, 80, 10, new { @class = "form-control ckeditor investment-detail-content", @name = "editor1" })
+
+
+                                    @Html.ValidationMessageFor(model => model.onePortfolio.PortfolioDetails, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Save" class="btn btn-default" />
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                    <div>
+                        @Html.ActionLink("Back to List", "Index")
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

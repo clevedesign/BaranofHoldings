@@ -1,0 +1,594 @@
+﻿@model BaranofHoldings.Areas.Admin.Models.HomeModelAdmin
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    // ViewBag.HomeHeader = Model.home.Header;
+}
+<span id="approach" class="anchor"></span>
+<div class="container">
+    <div class="row" style="background-color:black;">
+        <div class="col-md-12">
+            <section>
+                @using (Html.BeginForm("UpdateMainContent", "AdminHome", FormMethod.Post))
+            {
+
+                    @Html.HiddenFor(model => model.PortfoliosCurrent);
+                    @Html.HiddenFor(model => model.TeamList);
+                    @Html.HiddenFor(mode => Model.PortfoliosDiligence);
+                    @Html.HiddenFor(model => model.PortfoliosExited);
+                    @Html.HiddenFor(model => model.contact);
+                    @Html.HiddenFor(model => model.PortfoliosAll);
+                    @Html.HiddenFor(model => model.Team)
+                    @Html.HiddenFor(model => model.home)
+
+
+
+                    <div class="col-md-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Update page content (except Portfolio and Team) sections.</div>
+                            <div class="panel-body" style="background-color: white;">
+                                <div class="form-group">
+                                    <section id="heading" class="">
+                                        <div class="section-title">
+                                            Overview
+                                        </div>
+                                        <div class="col-md-10 col-md-offset-2">
+                                            <!--main Content-->
+                                            @Html.TextAreaFor(model => @Model.overview.Content, 80, 10, new { @class = "form-control ckeditor investment-detail-content", @name = "editor1" })
+                                            <br />
+                                            <br />
+                                        </div>
+                                    </section>
+                                    <section class="approach-section ">
+                                        <div class="">
+                                           
+                                            <div class="section-title">
+                                                
+                                                Investment Approach
+                                            </div>
+                                            <div class="section-content">
+                                                <div class="">
+                                                    @for (var i = 0; i < @Model.approach.Count; i++)
+                                                    {
+                                                        @Html.HiddenFor(c => c.approach[i].Created)
+                                                        @Html.HiddenFor(c => c.approach[i].Modified)
+                                                        @Html.HiddenFor(c => c.approach[i].isDeleted)
+                                                        @Html.HiddenFor(c => c.approach[i].id)
+                                                        @Html.HiddenFor(c => c.approach[i].Image)
+                                                        <div class="left-part col-sm-2 desktop">
+                                                            <img src="~/Images/@Model.approach[i].Image" />
+                                                        </div>
+                                                        <div class="right-part col-sm-10">
+                                                            <img class="mobile" src="~/Images/@Model.approach[i].Image" />
+                                                            <div class="approach-content">
+                                                                <div class="approach-content-title">
+                                                                    @Html.TextBoxFor(model => @Model.approach[i].Title, new { @class = "form-control" })<!--Investment Title-->
+
+                                                                </div>
+                                                                <div class="">
+                                                                    <!--Top investment Content-->
+                                                                    @Html.TextAreaFor(model => @Model.approach[i].Content, 80, 10, new { @class = "form-control ckeditor investment-detail-content", @name = "editor1" })
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    }
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <span id="criteria" class="anchor"></span>
+                                    <section class="invest-section">
+                                        <div class="">
+                                            <div class="section-title">
+                                                Strategy
+                                            </div>
+
+                                            @for (var j = 0; j < @Model.strategy.Count; j++)
+                                            {
+                                                @Html.HiddenFor(c => c.strategy[j].Created)
+                                                @Html.HiddenFor(c => c.strategy[j].Modified)
+                                                @Html.HiddenFor(c => c.strategy[j].isDeleted)
+                                                @Html.HiddenFor(c => c.strategy[j].id)
+
+                                                <div class="col-md-offset-2 col-sm-10 stratedy_block">
+                                                    @*<div>Title</div>*@
+                                                    <span>
+                                                        <!--Strategy content-->
+                                                        @Html.TextBoxFor(model => @Model.strategy[j].Content, new { @class = "form-control" })
+                                                    </span>
+                                                </div>
+                                            }
+
+                                        </div>
+                                        <section class="invest-section">
+                                            <div class="">
+                                                <div class="col-md-12">
+                                                    <button type="submit" class="btn btn-default">Update Changes</button>
+                                                    <br />
+                                                    <br />
+                                                    <br />
+                                                    <br />
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </section>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+
+            </section>
+        </div>
+
+    </div>
+</div>
+
+
+<span id="portfolio" class="anchor"></span>
+<div class="container">
+
+
+
+    <div class="col-md-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Add new Portfolio</div>
+            <div class="panel-body" style="background-color: white;">
+                <div class="form-group">
+                    <section class="portfolio-section ">
+
+
+
+                        <div class="">
+                            <div class="section-title">
+                                Portfolio
+                            </div>
+                            <div class="section-content">
+                                <div class="portfolio-content">
+                                    <ul class="filters row nav nav-tabs" id="myTab">
+                                        <li><a class="Active" data-target="#profile" data-toggle="tab">All</a></li>
+                                        <li><a data-target="#messages" data-toggle="tab">Under Construction</a></li>
+                                        <li><a data-target="#settings" data-toggle="tab">Pre-Development</a></li>
+                                        <li>
+                                            <!-- FAB button with ripple -->
+                                            <button  class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" onclick="window.location.href = '@Url.Action("AddPortfolio", "AdminHome")'" >
+                                                <i class="material-icons">add</i>
+                                            </button>
+                                          
+
+                                        </li>
+                                      
+                                        
+                                    </ul>
+                                    <br />
+                                    <div class="tab-content">
+                                        <div class="tab-pane" id="profile">
+                                            <div class="portfolio-list row">
+                                                @foreach (var item in Model.PortfoliosAll)
+                                                {
+                                                    <figure class="col-md-3 col-sm-6 col-xs-6 passedid" id="@item.PortfolioId" data-toggle="modal" data-target=".openmodal">
+                                                        <a href="~/Admin/AdminHome/UpdatePortfolio/@item.PortfolioId" class="portfolio-link">
+                                                            <div class="port-hover">
+                                                                <div class="port-name">
+                                                                    @item.PortfolioName
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="port-list-content">
+                                                                <div class="">
+                                                                    <div class="hover_portfolio">
+
+                                                                        @item.PortfolioName
+                                                                        <br />
+                                                                        @item.PortfolioFrontLocation
+                                                                    </div>
+
+                                                                    <div class="port-logo ">
+                                                                        <img src="~/Images/@item.PortfolioLogo" alt="@item.PortfolioName" title="@item.PortfolioName">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span>@Html.ActionLink("Remove", "DeletePortfolio", new { id = @item.PortfolioId, @class = " btn btn-danger" })</span>
+
+                                                    </figure>
+                                                }
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="messages">
+                                            <div class="portfolio-list row">
+                                                @foreach (var item in Model.PortfoliosCurrent)
+                                                {
+                                                    <figure class="col-md-3 col-sm-6 col-xs-6 passedid" id="@item.PortfolioId" data-toggle="modal" data-target=".openmodal">
+                                                        <a href="~/Admin/AdminHome/UpdatePortfolio/@item.PortfolioId" class="portfolio-link">
+                                                            <div class="port-hover">
+                                                                <div class="port-name">
+                                                                    @item.PortfolioName
+                                                                </div>
+                                                            </div>
+                                                            <div class="port-list-content">
+                                                                <div class="">
+                                                                    <div class="hover_portfolio">
+                                                                        @item.PortfolioName
+                                                                        <br />
+                                                                        @item.PortfolioFrontLocation
+                                                                    </div>
+                                                                    <div class="port-logo">
+                                                                        <img src="~/Images/@item.PortfolioLogo" alt="@item.PortfolioName" title="@item.PortfolioName">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <span>@Html.ActionLink("Remove", "DeletePortfolio", new { id = @item.PortfolioId, @class = " btn btn-danger" })</span>
+                                                    </figure>
+                                                }
+
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="settings">
+                                            @foreach (var item in Model.PortfoliosExited)
+                                            {
+
+                                                <figure class="col-md-3 col-sm-6 col-xs-6 passedid" id="@item.PortfolioId" data-toggle="modal" data-target=".openmodal">
+                                                    <a href="~/Admin/AdminHome/UpdatePortfolio/@item.PortfolioId" class="portfolio-link">
+                                                        <div class="port-hover">
+                                                            <div class="port-name">
+                                                                @item.PortfolioName
+
+                                                            </div>
+                                                            <div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="port-list-content">
+                                                            <div class="">
+                                                                <div class="hover_portfolio">
+                                                                    @item.PortfolioName
+                                                                    <br />
+                                                                    @item.PortfolioFrontLocation
+                                                                </div>
+                                                                <div class="port-logo">
+                                                                    <img src="~/Images/@item.PortfolioLogo" alt="@item.PortfolioName" title="@item.PortfolioName">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <span>@Html.ActionLink("Remove", "DeletePortfolio", new { id = @item.PortfolioId, @class = " btn btn-danger" })</span>
+                                                </figure>
+                                            }
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<span id="team" class="anchor"></span>
+<section class="team-section">
+    <div class="container">
+        <div class="section-title">
+            Team
+        </div>
+        <div class="section-content">
+            <div class="team-content">
+                <div class="members">
+                    <div class="col-md-12">
+
+                        <!-- FAB button with ripple -->
+                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" style="background-color:white;" onclick="window.location.href = '@Url.Action("AddTeam", "AdminHome")'">
+                            <i class="material-icons">add</i>
+                        </button>
+                        <br/>
+                        <br/>
+                        <br />
+
+                    </div>
+                    @foreach (var itemTeam in Model.TeamList)
+                    {
+                        <figure class="col-md-3 col-sm-6 col-xs-6 passedidTean" id="@itemTeam.TeamMemberId" data-toggle="modal" data-target=".openmodalTeam">
+                            <a href="~/Admin/AdminHome/UpdateTeam/@itemTeam.TeamMemberId" class="member-link">
+                                <div class="member-hover">
+                                    <div class="member-name">
+
+                                        @itemTeam.FirstName
+                                        @itemTeam.LastName
+                                    </div>
+                                    <div class="member-title">
+                                        @itemTeam.MemberTitle
+                                    </div>
+                                </div>
+                                <img src="~/Images/@itemTeam.MemberPicture" alt="@itemTeam.FirstName" title="@itemTeam.FirstName">
+                            </a>
+                            <span>@Html.ActionLink("Remove", "DeleteTeam", new { id = @itemTeam.TeamMemberId })</span>
+                        </figure>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@using (Html.BeginForm("UpdateContact","AdminHome"))
+{
+    @Html.HiddenFor(c=> @Model.contact.isDeleted)
+    @Html.HiddenFor(c => @Model.contact.Created)
+    @Html.HiddenFor(c => @Model.contact.Pdf)
+    @Html.HiddenFor(c => @Model.contact.id)
+    @Html.HiddenFor(c => @Model.contact.Mail)
+    @Html.HiddenFor(c => @Model.contact.Title)
+
+
+
+    <section id="contact" class="contact-section grey-section">
+        <div class="container">
+            <div class="section-title">
+                Contact
+            </div>
+            <div class="section-content">
+                <div class="contact-content">
+                    <div class="left-part col-sm-3">
+                        <div class="contact-title">
+                            @Html.TextBoxFor(model => @Model.contact.FirmName, new { @class = "form-control" })
+                        </div>
+                        <div class="contact-address">
+                            <span>
+                              
+                            @Html.TextBoxFor(model => @Model.contact.City, new { @class = "form-control" })
+                        </span><br />
+                        <span>
+                            @Html.TextBoxFor(model => @Model.contact.City, new { @class = "form-control" })
+                            <br/>
+                            @Html.TextBoxFor(model => @Model.contact.State, new { @class = "form-control" })
+                            <br />
+                            @Html.TextBoxFor(model => @Model.contact.Zip, new { @class = "form-control" })
+                        </span><br />
+                        <span>
+                            @Html.TextBoxFor(model => @Model.contact.PNumber, new { @class = "form-control" })
+                        </span><br /> 
+                            <span>
+                                <!-- Raised button with ripple -->
+                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit">
+                                   Update Contact
+                                </button>
+                            </span>
+                    </div>
+                    <br />
+                </div>
+                <div class="right-part col-sm-9 map">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.143645286981!2d-96.80663858440204!3d32.788450290708674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e993b6a4c4e4d%3A0x9fa1471623b719b4!2s1717+McKinney+Ave+%23700%2C+Dallas%2C+TX+75202!5e0!3m2!1sen!2sus!4v1455293311232" width="825" height="265" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+}
+
+
+
+
+@section scripts{
+    <script src="~/Scripts/knockout-3.4.0.js"></script>
+    <script src="~/Scripts/moment.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            var viewModel = function () {
+                //ko
+                //port observables
+                var self = this;
+                self.CKEditorUpdated = ko.observable();
+                self.Content = ko.observable();
+
+                self.PortfolioId = ko.observable();
+                self.PortfolioType = ko.observable();
+                self.PortfolioName = ko.observable();
+                self.PortfolioLogo = ko.observable();
+                self.PortfolioLocation = ko.observable();
+                self.PortfolioServices = ko.observable();
+                self.PortfolioDate = ko.observable();
+                self.PortfolioSite = ko.observable();
+                self.PortfolioDetails = ko.observable();
+
+                //team observables
+
+                self.TeamMemberId = ko.observable();
+                self.MemberType = ko.observable();
+                self.Prefix = ko.observable();
+                self.FirstName = ko.observable();
+                self.MiddleName = ko.observable();
+                self.LastName = ko.observable();
+                self.MemberTitle = ko.observable();
+                self.MemberEmail = ko.observable();
+                self.MemberPhone = ko.observable();
+                self.MemberLinkedIn = ko.observable();
+                self.MembervCard = ko.observable();
+                self.MemberPicture = ko.observable();
+                self.MemberBriefIntro = ko.observable();
+                self.MemberBio = ko.observable();
+
+
+
+
+                //porfolio
+                $('.passedid').click(function () {
+                    var newID = $(this).attr("id");
+                    var URL = '@Url.Action("getPortfolio", "AdminHome")/' + newID;
+                    $.ajax({
+                        type: "GET",
+                        url: URL,
+                        datatype: "json",
+                        success: function (returnData) {
+                            var mydata = returnData.Data;
+
+                            self.PortfolioId(mydata.PortfolioId)
+                            self.PortfolioType(mydata.PortfolioType)
+                            self.PortfolioName(mydata.PortfolioName)
+                            self.PortfolioLogo("/upload/portfolios/" + mydata.PortfolioLogo)
+                            self.PortfolioLocation(mydata.PortfolioLocation)
+                            self.PortfolioServices(mydata.PortfolioServices)
+                            self.PortfolioDate(mydata.PortfolioDate)
+                            self.PortfolioSite(mydata.PortfolioSite)
+                            self.PortfolioDetails(mydata.PortfolioDetails)
+
+                        }
+
+                    });
+                });
+
+
+                //team
+                $('.passedidTean').click(function () {
+                    var newID = $(this).attr("id");
+                    var URL = '@Url.Action("getTeam", "AdminHome")/' + newID;
+                    $.ajax({
+                        type: "GET",
+                        url: URL,
+                        datatype: "json",
+                        success: function (returnData) {
+                            var mydata = returnData.Data;
+
+                            self.TeamMemberId(mydata.TeamMemberId)
+                            self.MemberType(mydata.MemberType)
+                            self.Prefix(mydata.Prefix)
+                            self.FirstName(mydata.FirstName)
+                            self.MiddleName(mydata.MiddleName)
+                            self.LastName(mydata.LastName)
+                            self.MemberTitle(mydata.MemberTitle)
+                            self.MemberEmail(mydata.MemberEmail)
+                            self.MemberPhone(mydata.MemberPhone)
+                            self.MemberLinkedIn(mydata.MemberLinkedIn)
+                            self.MembervCard("/upload/vcards/" + mydata.MembervCard)
+                            self.MemberPicture("/upload/members/" + mydata.MemberPicture)
+                            self.MemberBriefIntro(mydata.MemberBriefIntro)
+                            self.MemberBio(mydata.MemberBio)
+
+                        }
+
+                    });
+                });
+
+                //update
+                self.Content.subscribe(function (x) {
+                    self.CKEditorUpdated(x);
+                });
+
+                self.PortfolioDetails = ko.observable();
+                //check
+                var model = {
+                    "PortfolioId": self.PortfolioId,
+                    "PortfolioType": self.PortfolioType,
+                    "PortfolioName": self.PortfolioName,
+                    "PortfolioLogo": self.PortfolioLogo,
+                    "PortfolioLocation": self.PortfolioLocation,
+                    "PortfolioLogo": self.PortfolioLogo,
+                    "PortfolioDate": self.PortfolioDate,
+                    "PortfolioSite": self.PortfolioSite,
+                    "PortfolioServices": self.PortfolioServices,
+                    "PortfolioDetails": self.PortfolioDetails,
+                    //"Created": moment(self.Created()).format("MM/DD/YYYY"),
+                    //"Modified": moment(self.Modified()).format("MM/DD/YYYY"),
+                    //"isDeleted": self.isDeleted
+                }
+
+                self.update = function () {
+                    debugger;
+                    //var formdata = new FormData(); //FormData object
+                    //var fileInput = document.getElementById('file');
+
+                    //if (!fileInput.files.length > 0) {
+                    //    self.LogoErrorMessage("no logo selected!")
+                    //}
+                    //formdata.append(fileInput.files[0].name, fileInput.files[0]);
+
+                    ////Creating an XMLHttpRequest and sending
+                    //var xhr = new XMLHttpRequest();
+                    //xhr.open('POST', 'http://localhost:55087/api/Upload/' + self.HoldID());
+                    //xhr.send(formdata);
+                    //xhr.onreadystatechange = function () {
+
+                    //    if (xhr.readyState == 4 && xhr.status == 200) {
+                    //     self.LogoErrorMessage(xhr.responseText);
+                    //    }
+                    //}
+
+                    //xhr.open('POST', 'http://03cf1e3.netsolhost.com/api/Upload/');
+                    //xhr.send(formdata);
+                    //xhr.onreadystatechange = function () {
+
+                    //    if (xhr.readyState == 4 && xhr.status == 200) {
+                    //        self.LogoErrorMessage(xhr.responseText);
+                    //    }
+                    //}
+
+                    $.ajax({
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        url: '@Url.Action("UpdatePortfolio", "AdminHome")',
+                        data: ko.toJSON(model),
+                        success: function (jsonData) {
+
+
+                        }
+
+
+                    });
+                }
+
+
+
+
+                // bind data to the element because ko replaces every element when it updates first so the link get disconnected and this bypass update
+                ko.bindingHandlers.CKEDITOR = {
+                    init: function (element, valueAccessor, allBindings, viewModel, bindingContext) {
+                        var ckEditorValue = valueAccessor();
+                        var id = $(element).attr('id');
+                        var options = allBindings().EditorOptions;
+                        var ignoreChanges = false;
+                        var instance = CKEDITOR.replace(id, {
+                            on: {
+                                change: function () {
+                                    ignoreChanges = true;
+                                    ckEditorValue(instance.getData());
+                                    ignoreChanges = false;
+                                }
+                            }
+                        });
+                        ckEditorValue.subscribe(function (newValue) {
+                            if (!ignoreChanges) {
+                                instance.setData(newValue);
+                            }
+                        });
+                    }
+                };
+
+
+            }
+
+            ko.applyBindings(viewModel);
+
+        });
+    </script>
+
+}

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_97691_baranofModelStoreContainer" CdmEntityContainer="DB_97691_baranofEntities2">
+    <EntitySetMapping Name="Homes">
+      <EntityTypeMapping TypeName="DB_97691_baranofModel.Home">
+        <MappingFragment StoreEntitySet="Home">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Overviews">
+      <EntityTypeMapping TypeName="DB_97691_baranofModel.Overview">
+        <MappingFragment StoreEntitySet="Overview">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Approaches">
+      <EntityTypeMapping TypeName="DB_97691_baranofModel.Approach">
+        <MappingFragment StoreEntitySet="Approach">
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Strategies">
+      <EntityTypeMapping TypeName="DB_97691_baranofModel.Strategy">
+        <MappingFragment StoreEntitySet="Strategy">
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeamMembers">
+      <EntityTypeMapping TypeName="DB_97691_baranofModel.TeamMember">
+        <MappingFragment StoreEntitySet="TeamMember">
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="MemberOrder" ColumnName="MemberOrder" />
+          <ScalarProperty Name="MemberBio" ColumnName="MemberBio" />
+          <ScalarProperty Name="MemberBriefIntro" ColumnName="MemberBriefIntro" />
+          <ScalarProperty Name="MemberPicture" ColumnName="MemberPicture" />
+          <ScalarProperty Name="MembervCard" ColumnName="MembervCard" />
+          <ScalarProperty Name="MemberLinkedIn" ColumnName="MemberLinkedIn" />
+          <ScalarProperty Name="MemberPhone" ColumnName="MemberPhone" />
+          <ScalarProperty Name="MemberEmail" ColumnName="MemberEmail" />
+          <ScalarProperty Name="MemberTitle" ColumnName="MemberTitle" />
+          <ScalarProperty Name="Suffix" ColumnName="Suffix" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="MemberType" ColumnName="MemberType" />
+          <ScalarProperty Name="TeamMemberId" ColumnName="TeamMemberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="DB_97691_baranofModel.Contact">
+        <MappingFragment StoreEntitySet="Contact">
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Pdf" ColumnName="Pdf" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="PNumber" ColumnName="PNumber" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FirmName" ColumnName="FirmName" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PortfolioContents">
+      <EntityTypeMapping TypeName="DB_97691_baranofModel.PortfolioContent">
+        <MappingFragment StoreEntitySet="PortfolioContent">
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="PortfolioOrder" ColumnName="PortfolioOrder" />
+          <ScalarProperty Name="PortfolioDetails" ColumnName="PortfolioDetails" />
+          <ScalarProperty Name="PortfolioSite" ColumnName="PortfolioSite" />
+          <ScalarProperty Name="PortfolioDate" ColumnName="PortfolioDate" />
+          <ScalarProperty Name="PortfolioServices" ColumnName="PortfolioServices" />
+          <ScalarProperty Name="PortfolioLocation" ColumnName="PortfolioLocation" />
+          <ScalarProperty Name="PortfolioFrontLocation" ColumnName="PortfolioFrontLocation" />
+          <ScalarProperty Name="PortfolioLogo" ColumnName="PortfolioLogo" />
+          <ScalarProperty Name="PortfolioName" ColumnName="PortfolioName" />
+          <ScalarProperty Name="PortfolioType" ColumnName="PortfolioType" />
+          <ScalarProperty Name="PortfolioId" ColumnName="PortfolioId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

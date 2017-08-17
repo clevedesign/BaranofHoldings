@@ -1,0 +1,87 @@
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\BLL\bin\Release\BLL.dll
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\BLL\bin\Release\BLL.pdb
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\BLL\bin\Release\DAL.dll
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\BLL\bin\Release\EntityFramework.dll
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\BLL\bin\Release\DAL.pdb
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\BLL\bin\Release\EntityFramework.xml
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\BLL\obj\Release\BLL.dll
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\BLL\obj\Release\BLL.pdb
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\BLL\bin\Release\BLL.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\BLL\bin\Release\BLL.pdb
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\BLL\bin\Release\DAL.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\BLL\bin\Release\EntityFramework.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\BLL\bin\Release\DAL.pdb
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\BLL\bin\Release\EntityFramework.xml
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\BLL\obj\Release\BLL.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\BLL\obj\Release\BLL.pdb
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\BLL.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\BLL.pdb
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\DAL.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\EntityFramework.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\DAL.pdb
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\EntityFramework.xml
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\obj\Release\BLL.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\obj\Release\BLL.pdb
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\roslyn\csc.exe
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\roslyn\System.Collections.Immutable.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\roslyn\System.Reflection.Metadata.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\roslyn\vbc.exe
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\roslyn\VBCSCompiler.exe
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\roslyn\VBCSCompiler.exe.config
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\BLL\bin\Release\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\roslyn\csc.exe
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\roslyn\System.Collections.Immutable.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\roslyn\System.Reflection.Metadata.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\roslyn\vbc.exe
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\roslyn\VBCSCompiler.exe
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\roslyn\VBCSCompiler.exe.config
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\BLL.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\BLL.pdb
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\DAL.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\EntityFramework.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\DAL.pdb
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\bin\Release\EntityFramework.xml
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\obj\Release\BLL.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\BLL\obj\Release\BLL.pdb
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\roslyn\csc.exe
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\roslyn\System.Collections.Immutable.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\roslyn\System.Reflection.Metadata.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\roslyn\vbc.exe
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\roslyn\VBCSCompiler.exe
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\roslyn\VBCSCompiler.exe.config
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\BLL.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\BLL.pdb
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\DAL.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\EntityFramework.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\DAL.pdb
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\bin\Release\EntityFramework.xml
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\obj\Release\BLL.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\BLL\obj\Release\BLL.pdb

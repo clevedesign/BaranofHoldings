@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SevenPointDBModelStoreContainer" CdmEntityContainer="SevenPointDBEntities">
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="SevenPointDBModel.Contact">
+        <MappingFragment StoreEntitySet="Contact">
+          <ScalarProperty Name="ContactId" ColumnName="ContactId" />
+          <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+          <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Map" ColumnName="Map" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logs">
+      <EntityTypeMapping TypeName="SevenPointDBModel.Log">
+        <MappingFragment StoreEntitySet="Log">
+          <ScalarProperty Name="LogId" ColumnName="LogId" />
+          <ScalarProperty Name="LogType" ColumnName="LogType" />
+          <ScalarProperty Name="ContentName" ColumnName="ContentName" />
+          <ScalarProperty Name="OldValues" ColumnName="OldValues" />
+          <ScalarProperty Name="NewValues" ColumnName="NewValues" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PageContents">
+      <EntityTypeMapping TypeName="SevenPointDBModel.PageContent">
+        <MappingFragment StoreEntitySet="PageContent">
+          <ScalarProperty Name="ContentId" ColumnName="ContentId" />
+          <ScalarProperty Name="ParentPage" ColumnName="ParentPage" />
+          <ScalarProperty Name="ContentName" ColumnName="ContentName" />
+          <ScalarProperty Name="ContentDetails" ColumnName="ContentDetails" />
+          <ScalarProperty Name="ContentOrder" ColumnName="ContentOrder" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PortfolioContents">
+      <EntityTypeMapping TypeName="SevenPointDBModel.PortfolioContent">
+        <MappingFragment StoreEntitySet="PortfolioContent">
+          <ScalarProperty Name="PortfolioId" ColumnName="PortfolioId" />
+          <ScalarProperty Name="PortfolioType" ColumnName="PortfolioType" />
+          <ScalarProperty Name="PortfolioName" ColumnName="PortfolioName" />
+          <ScalarProperty Name="PortfolioLogo" ColumnName="PortfolioLogo" />
+          <ScalarProperty Name="PortfolioLocation" ColumnName="PortfolioLocation" />
+          <ScalarProperty Name="PortfolioServices" ColumnName="PortfolioServices" />
+          <ScalarProperty Name="PortfolioDate" ColumnName="PortfolioDate" />
+          <ScalarProperty Name="PortfolioSite" ColumnName="PortfolioSite" />
+          <ScalarProperty Name="PortfolioDetails" ColumnName="PortfolioDetails" />
+          <ScalarProperty Name="PortfolioOrder" ColumnName="PortfolioOrder" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeamMembers">
+      <EntityTypeMapping TypeName="SevenPointDBModel.TeamMember">
+        <MappingFragment StoreEntitySet="TeamMember">
+          <ScalarProperty Name="TeamMemberId" ColumnName="TeamMemberId" />
+          <ScalarProperty Name="MemberType" ColumnName="MemberType" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Suffix" ColumnName="Suffix" />
+          <ScalarProperty Name="MemberTitle" ColumnName="MemberTitle" />
+          <ScalarProperty Name="MemberEmail" ColumnName="MemberEmail" />
+          <ScalarProperty Name="MemberPhone" ColumnName="MemberPhone" />
+          <ScalarProperty Name="MemberLinkedIn" ColumnName="MemberLinkedIn" />
+          <ScalarProperty Name="MembervCard" ColumnName="MembervCard" />
+          <ScalarProperty Name="MemberPicture" ColumnName="MemberPicture" />
+          <ScalarProperty Name="MemberBriefIntro" ColumnName="MemberBriefIntro" />
+          <ScalarProperty Name="MemberBio" ColumnName="MemberBio" />
+          <ScalarProperty Name="MemberOrder" ColumnName="MemberOrder" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

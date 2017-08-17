@@ -1,0 +1,92 @@
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\DAL\bin\Debug\DAL.dll.config
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\DAL\bin\Debug\DAL.dll
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\DAL\bin\Debug\DAL.pdb
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\DAL\bin\Debug\EntityFramework.dll
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\DAL\bin\Debug\EntityFramework.xml
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\DAL\obj\Debug\DAL.dll
+C:\Users\CWR\Desktop\WORK\Lewis\Developing\SevenPoint\SevenPoint\DAL\obj\Debug\DAL.pdb
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\DAL\bin\Debug\DAL.dll.config
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\DAL\bin\Debug\DAL.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\DAL\bin\Debug\DAL.pdb
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\DAL\bin\Debug\EntityFramework.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\DAL\bin\Debug\EntityFramework.xml
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\DAL\obj\Debug\DAL.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\DAL\obj\Debug\DAL.pdb
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\SevenPoint\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\DAL.dll.config
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\DAL.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\DAL.pdb
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\EntityFramework.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\EntityFramework.xml
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\obj\Debug\DAL.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\obj\Debug\DAL.pdb
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\roslyn\csc.exe
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\roslyn\vbc.exe
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\CWR\Desktop\WORK\kate\Developing\mvc-projects\baranof\BaranofHoldings\DAL\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\roslyn\csc.exe
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\roslyn\vbc.exe
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\DAL.dll.config
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\DAL.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\DAL.pdb
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\obj\Debug\DAL.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\obj\Debug\DAL.pdb
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\Baranof\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\roslyn\csc.exe
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\roslyn\vbc.exe
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\DAL.dll.config
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\DAL.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\DAL.pdb
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\obj\Debug\DAL.dll
+C:\Users\Clever Design\Desktop\Work\DisocarRodriguez\MVC-Project\CMSOnly\Baranof\DAL\obj\Debug\DAL.pdb

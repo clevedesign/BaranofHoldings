@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="barano5_Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Approach">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="Content" Type="nvarchar(max)" />
+    <Property Name="Order" Type="int" />
+    <Property Name="Image" Type="nvarchar(max)" />
+    <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirmName" Type="nvarchar(max)" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="City" Type="nvarchar(max)" />
+    <Property Name="State" Type="nvarchar(max)" />
+    <Property Name="Zip" Type="nvarchar(max)" />
+    <Property Name="PNumber" Type="nvarchar(max)" />
+    <Property Name="Mail" Type="nvarchar(max)" />
+    <Property Name="Pdf" Type="nvarchar(max)" />
+    <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Home">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Header" Type="nvarchar(max)" />
+    <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Overview">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Content" Type="nvarchar(max)" />
+    <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PortfolioContent">
+    <Key>
+      <PropertyRef Name="PortfolioId" />
+    </Key>
+    <Property Name="PortfolioId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PortfolioType" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="PortfolioName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PortfolioLogo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PortfolioFrontLocation" Type="nvarchar(max)" />
+    <Property Name="PortfolioLocation" Type="nvarchar(max)" />
+    <Property Name="PortfolioServices" Type="nvarchar(max)" />
+    <Property Name="PortfolioDate" Type="datetime2" Precision="7" />
+    <Property Name="PortfolioSite" Type="nvarchar(max)" />
+    <Property Name="PortfolioDetails" Type="nvarchar(max)" />
+    <Property Name="PortfolioOrder" Type="int" Nullable="false" />
+    <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Strategy">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="Content" Type="nvarchar(max)" />
+    <Property Name="Order" Type="int" />
+    <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TeamMember">
+    <Key>
+      <PropertyRef Name="TeamMemberId" />
+    </Key>
+    <Property Name="TeamMemberId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MemberType" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Prefix" Type="nvarchar" MaxLength="100" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="MiddleName" Type="nvarchar" MaxLength="200" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Suffix" Type="nvarchar" MaxLength="100" />
+    <Property Name="MemberTitle" Type="nvarchar(max)" />
+    <Property Name="MemberEmail" Type="nvarchar(max)" />
+    <Property Name="MemberPhone" Type="nvarchar(max)" />
+    <Property Name="MemberLinkedIn" Type="nvarchar(max)" />
+    <Property Name="MembervCard" Type="nvarchar(max)" />
+    <Property Name="MemberPicture" Type="nvarchar(max)" />
+    <Property Name="MemberBriefIntro" Type="nvarchar(max)" />
+    <Property Name="MemberBio" Type="nvarchar(max)" />
+    <Property Name="MemberOrder" Type="int" Nullable="false" />
+    <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="barano5_ModelStoreContainer">
+    <EntitySet Name="Approach" EntityType="Self.Approach" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Contact" EntityType="Self.Contact" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Home" EntityType="Self.Home" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Overview" EntityType="Self.Overview" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PortfolioContent" EntityType="Self.PortfolioContent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Strategy" EntityType="Self.Strategy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TeamMember" EntityType="Self.TeamMember" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

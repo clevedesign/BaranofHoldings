@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SevenPointDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="ContactId" />
+    </Key>
+    <Property Name="ContactId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AddressLine1" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AddressLine2" Type="nvarchar(max)" />
+    <Property Name="City" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="State" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Zip" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="200" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="Map" Type="nvarchar(max)" />
+    <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="LogId" />
+    </Key>
+    <Property Name="LogId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LogType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ContentName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="OldValues" Type="nvarchar(max)" />
+    <Property Name="NewValues" Type="nvarchar(max)" />
+    <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PageContent">
+    <Key>
+      <PropertyRef Name="ContentId" />
+    </Key>
+    <Property Name="ContentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentPage" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="ContentName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ContentDetails" Type="nvarchar(max)" />
+    <Property Name="ContentOrder" Type="int" Nullable="false" />
+    <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PortfolioContent">
+    <Key>
+      <PropertyRef Name="PortfolioId" />
+    </Key>
+    <Property Name="PortfolioId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PortfolioType" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="PortfolioName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PortfolioLogo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PortfolioLocation" Type="nvarchar(max)" />
+    <Property Name="PortfolioServices" Type="nvarchar(max)" />
+    <Property Name="PortfolioDate" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="PortfolioSite" Type="nvarchar(max)" />
+    <Property Name="PortfolioDetails" Type="nvarchar(max)" />
+    <Property Name="PortfolioOrder" Type="int" Nullable="false" />
+    <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TeamMember">
+    <Key>
+      <PropertyRef Name="TeamMemberId" />
+    </Key>
+    <Property Name="TeamMemberId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MemberType" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Prefix" Type="nvarchar" MaxLength="100" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="MiddleName" Type="nvarchar" MaxLength="200" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Suffix" Type="nvarchar" MaxLength="100" />
+    <Property Name="MemberTitle" Type="nvarchar(max)" />
+    <Property Name="MemberEmail" Type="nvarchar(max)" />
+    <Property Name="MemberPhone" Type="nvarchar(max)" />
+    <Property Name="MemberLinkedIn" Type="nvarchar(max)" />
+    <Property Name="MembervCard" Type="nvarchar(max)" />
+    <Property Name="MemberPicture" Type="nvarchar(max)" />
+    <Property Name="MemberBriefIntro" Type="nvarchar(max)" />
+    <Property Name="MemberBio" Type="nvarchar(max)" />
+    <Property Name="MemberOrder" Type="int" Nullable="false" />
+    <Property Name="Created" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="Modified" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="SevenPointDBModelStoreContainer">
+    <EntitySet Name="Contact" EntityType="Self.Contact" Schema="lewis" store:Type="Tables" />
+    <EntitySet Name="Log" EntityType="Self.Log" Schema="lewis" store:Type="Tables" />
+    <EntitySet Name="PageContent" EntityType="Self.PageContent" Schema="lewis" store:Type="Tables" />
+    <EntitySet Name="PortfolioContent" EntityType="Self.PortfolioContent" Schema="lewis" store:Type="Tables" />
+    <EntitySet Name="TeamMember" EntityType="Self.TeamMember" Schema="lewis" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
